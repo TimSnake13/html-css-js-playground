@@ -1,0 +1,46 @@
+body {
+  font-family: sans-serif;
+  background: #dedede;
+  padding: 48px;
+}
+
+h1 {
+  text-align: center;
+  display: inline-block;
+  font-size: 72px;
+}
+
+.card {
+  background-color: slategrey;
+  padding: 1rem;
+  text-align: center;
+  font-size: 3rem;
+  color: #fff;
+  border-radius: 4px;
+  transition: all 500ms;
+  overflow: hidden;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.basic-grid {
+  display: grid;
+  gap: 1rem;
+  /* grid-template-columns: repeat(12, 1fr); */
+  grid-template-columns: repeat(12, minmax(240px, 1fr));
+  /****** implicit grid ******/
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.photo-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-auto-rows: 240px;
+}
+
+.card-tall {
+  grid-row: span 2 / auto;
+}
