@@ -10,6 +10,10 @@ h1 {
   font-size: 72px;
 }
 
+section {
+  margin-bottom: 5rem;
+}
+
 .card {
   background-color: slategrey;
   padding: 1rem;
@@ -43,4 +47,8 @@ h1 {
 
 .card-tall {
   grid-row: span 2 / auto;
+}
+
+.card-wide {
+  grid-column: span 2 / auto;
 }
